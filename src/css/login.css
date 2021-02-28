@@ -1,0 +1,251 @@
+@charset "UTF-8";
+.root {
+  background-color: #fff;
+}
+
+.root .headerbg {
+  padding: 30px 0;
+}
+
+.root .headerbg .header-logo {
+  width: 250px;
+  height: 36px;
+}
+
+.root .main {
+  min-height: 610px;
+  background: url(../images/login.jpg) no-repeat center;
+}
+
+.root .main .login {
+  width: 360px;
+  height: 380px;
+  background-color: #fff;
+  position: relative;
+  top: 100px;
+  left: 800px;
+}
+
+.root .main .login i {
+  float: left;
+  width: 14px;
+  height: 14px;
+  background: url(../images/LoginIn-icon.png) no-repeat;
+}
+
+.root .main .login .loginBox {
+  width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.root .main .login .loginBox .siteName {
+  font-size: 14px;
+  margin-top: 26px;
+}
+
+.root .main .login .loginBox .errorTip {
+  height: 20px;
+  color: #e00;
+  /* 隐藏错误提示信息 */
+  /* 显示错误提示信息 */
+}
+
+.root .main .login .loginBox .errorTip .hd-errorTip {
+  display: none;
+}
+
+.root .main .login .loginBox .errorTip .show-errorTip {
+  display: block;
+}
+
+.root .main .login .loginBox .errorTip i {
+  background-position: -38px -14px;
+  margin-top: 2px;
+}
+
+.root .main .login .loginBox form {
+  margin-top: 10px;
+  /* 输入错误 */
+  /* 输入正确 */
+}
+
+.root .main .login .loginBox form input {
+  width: 298px;
+  height: 34px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  text-indent: 30px;
+}
+
+.root .main .login .loginBox form input:hover {
+  border-bottom: 1px solid #000;
+}
+
+.root .main .login .loginBox form .active-red {
+  border-bottom: 1px solid red;
+}
+
+.root .main .login .loginBox form .active-green {
+  border-bottom: 1px solid green;
+}
+
+.root .main .login .loginBox form i {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 17px;
+  left: 5px;
+}
+
+.root .main .login .loginBox form .user, .root .main .login .loginBox form .password {
+  position: relative;
+  /* 正在输入图标 */
+  /* 输入正确图标 */
+  /* 输入错误图标 */
+}
+
+.root .main .login .loginBox form .user .input, .root .main .login .loginBox form .password .input {
+  width: 18px;
+  height: 18px;
+  left: 265px;
+  background-position: -20px -18px;
+}
+
+.root .main .login .loginBox form .user .pass, .root .main .login .loginBox form .password .pass {
+  width: 18px;
+  height: 18px;
+  left: 265px;
+  background-position: -20px 0;
+}
+
+.root .main .login .loginBox form .user .error, .root .main .login .loginBox form .password .error {
+  width: 18px;
+  height: 18px;
+  left: 265px;
+  background-position: -20px -36px;
+}
+
+.root .main .login .loginBox form .user i {
+  background-position: 0 -20px;
+}
+
+.root .main .login .loginBox form .forget {
+  margin: 10px 0 20px 0;
+  color: #919191;
+  cursor: pointer;
+}
+
+.root .main .login .loginBox form .forget:hover {
+  color: #e00;
+}
+
+.root .main .login .loginBox form .loginIn button {
+  font-size: 16px;
+  width: 300px;
+  height: 36px;
+  border: none;
+  background-color: #999;
+  color: #fff;
+  cursor: pointer;
+}
+
+.root .main .login .loginBox form .loginIn .pass {
+  background-color: #000;
+}
+
+.root .main .login .loginBox form .loginIn .pass:hover {
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
+  background-color: red;
+}
+
+.root .main .login .loginBox form .clause {
+  color: #919191;
+  margin: 10px 0 40px 0;
+}
+
+.root .main .login .loginBox form .clause input {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin: 0;
+}
+
+.root .main .login .loginBox form .clause p {
+  float: left;
+}
+
+.root .main .login .loginBox form .clause p a {
+  margin-left: -4px;
+  width: 100%;
+  color: #000;
+}
+
+.root .main .login .loginBox form .loginBox-footer {
+  position: relative;
+}
+
+.root .main .login .loginBox form .loginBox-footer .chat {
+  width: 90px;
+  height: 24px;
+  float: left;
+}
+
+.root .main .login .loginBox form .loginBox-footer .chat i {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.root .main .login .loginBox form .loginBox-footer .chat .wechat {
+  top: 0;
+  left: 0;
+  background-position: -56px 0;
+}
+
+.root .main .login .loginBox form .loginBox-footer .chat .wechat:hover {
+  background-position: -80px 0;
+}
+
+.root .main .login .loginBox form .loginBox-footer .chat .qq {
+  top: 0;
+  left: 30px;
+  background-position: -56px -24px;
+}
+
+.root .main .login .loginBox form .loginBox-footer .chat .qq:hover {
+  background-position: -80px -24px;
+}
+
+.root .main .login .loginBox form .loginBox-footer .chat .weibo {
+  top: 0;
+  left: 60px;
+  background-position: -56px -48px;
+}
+
+.root .main .login .loginBox form .loginBox-footer .chat .weibo:hover {
+  background-position: -80px -48px;
+}
+
+.root .main .login .loginBox form .loginBox-footer .register {
+  float: right;
+  color: #919191;
+  margin-right: 10px;
+}
+
+.root .main .login .loginBox form .loginBox-footer .register a {
+  color: #e00;
+}
+
+.root .main .login .loginBox form .loginBox-footer .register a:hover {
+  text-decoration: underline;
+}
+
+.root .main .login .loginBox form .loginBox-footer .register i {
+  left: 296px;
+  top: 4px;
+  background-position: -52px 0;
+}

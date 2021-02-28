@@ -1,0 +1,1 @@
+$(window).scroll(function(){600<$(window).scrollTop()?$(".fixedTop").addClass("active"):$(".fixedTop").removeClass("active")}),$(".SUMbit").click(function(){var o=$('[name="search1"]').val();console.log(o),localStorage.setItem("key",o),localStorage.removeItem("cat"),location="./list.html"});

@@ -1,0 +1,256 @@
+/* 顶部 */
+.headerbg{
+    background-color: #fff;
+}
+.headerbg-info {
+    padding: 30px 0;
+
+    .header-logo {
+        width: 250px;
+        height: 36px;
+        float: left;
+    }
+
+    .register {
+        font-size: 16px;
+        margin: 10px 0 0 30px;
+        float: left;
+    }
+
+    .login {
+        float: right;
+
+        p {
+            display: inline-block;
+            color: #9d9d9d;
+        }
+
+        span {
+            &:hover a {
+                color: #e00;
+                text-decoration: underline;
+            }
+
+            &:hover i {
+                border-left: 5px solid #e00;
+            }
+        }
+
+        i {
+            display: inline-block;
+            border-left: 5px solid #000;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+    }
+}
+/* 登录表单 */
+.loginForm {
+    width: 100%;
+    min-height: 810px;
+    float: left;
+    background: url(../images/login1.jpg) no-repeat 50% 0;
+    .loginForm-info {
+        margin: 50px 0 0 100px;
+        position: relative;
+        p {
+            display: inline-block;
+            width: 100px;
+            height: 34px;
+            line-height: 34px;
+            text-align: center;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .Goregister{
+            display: inline-block;
+            margin-left: 20px;
+            text-decoration: underline;
+            a{
+                color: #e00;
+            }
+        }
+        .loginForm-infos {
+            width: 300px;
+            display: inline-block;
+            position: relative;
+
+            input {
+                border: 1px solid #ccc;
+                width: 298px;
+                height: 30px;
+                text-indent: 20px;
+
+                &:hover {
+                    border-bottom: 1px solid #000;
+                }
+            }
+            /* 输入框验证通过不通过图标 */
+            i {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background: url(../images/LoginIn-icon.png) no-repeat;
+                position: absolute;
+                top: 8px;
+                right: 10px;
+                display: none;
+            }
+            /* 输入时 */
+            .input{
+                display: inline-block;
+                background-position: -20px -18px;
+            }
+            /* 验证通过 */
+            .pass {
+                display: inline-block;
+                background-position: -20px 0;
+                background-color: #fff !important;
+            }
+
+            .active-green {
+                border-bottom: 1px solid green !important;
+            }
+
+            /* 验证不通过 */
+            .error {
+                display: inline-block;
+                background-position: -20px -36px;
+            }
+
+            .active-red {
+                border-bottom: 1px solid #e00 !important;
+            }
+        }
+
+        /* 错误信息提示 */
+        .error {
+            width: 500px;
+            height: 34px;
+            display: block;
+            font-size: 12px;
+            text-align: left;
+            color: #e00;
+            margin-left: 115px;
+
+            .hiddenError {
+                /* 隐藏错误信息 */
+                display: none;
+
+                i {
+                    float: left;
+                    width: 14px;
+                    height: 14px;
+                    background: url(../images/LoginIn-icon.png) no-repeat -38px -14px;
+                    margin-top: 10px;
+                }
+
+                span {
+                    float: left;
+                    line-height: 34px;
+                    margin-left: 5px;
+                }
+            }
+            /* 显示错误信息 */
+            .active {
+                display: block !important;
+            }
+        }
+        /* 验证码 */
+       /*  .getCode {
+            width: 120px;
+            cursor: pointer;
+            margin-left: 10px;
+            background-color: #999;
+            color: #fff;
+        }
+
+        .unlockCode {
+            background-color: #000;
+
+            &:hover {
+                background-color: #e00;
+                transition: all .8s;
+            }
+        } */
+
+        .code{
+            position: absolute;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #ccc;
+            top: 71px;
+            left: 425px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #fff;
+        }
+        .codeCg{
+            margin-left: 100px;
+            text-decoration: underline;
+            cursor: pointer;
+            &:hover{
+                color: #e00;
+            }
+        }
+        /* 提交按钮 */
+        .sumbitBtn{
+            margin-left: 115px;
+        }
+
+        .sumbitBtn {
+            width: 300px;
+            height: 34px;
+            border: none;
+            background-color: #999999;
+            color: #ffffff;
+        }
+        .passBtn{
+            transition: all .8s;
+            background-color: #000 !important;
+            cursor: pointer;
+            &:hover{
+                transition: all .8s;
+            background-color: #e00 !important;
+            }
+        }
+        /* 法律条款 */
+        .clause{
+            line-height: 30px;
+            text-indent: 3px;
+            margin: 10px 0 0 115px;
+            float: left;
+            color: #9d9d9d;
+            [name='agreed'] {
+                width: 16px;
+                height: 16px;
+                margin-top: 8px;
+                float: left;
+            }
+            p{
+                width: 500px;
+                font-size: 12px;
+                text-align: left;
+                span {
+                    a{
+                        font-size: 12px;
+                    }
+                    &:hover a {
+                        color: #e00;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            em{
+                display: block;
+                font-size: 14px;
+                span{
+                    display: block;
+                    color: #e00;
+                }
+            }
+
+        }
+    }
+}

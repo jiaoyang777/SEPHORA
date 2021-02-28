@@ -1,0 +1,218 @@
+.root {
+background-color: #fff;
+    .headerbg {
+        padding: 30px 0;
+
+        .header-logo {
+            width: 250px;
+            height: 36px;
+        }
+    }
+    .main {
+        min-height: 610px;
+        background: url(../images/login.jpg) no-repeat center;
+
+        .login {
+            width: 360px;
+            height: 380px;
+            background-color: #fff;
+            position: relative;
+            top: 100px;
+            left: 800px;
+
+            i {
+                float: left;
+                width: 14px;
+                height: 14px;
+                background: url(../images/LoginIn-icon.png) no-repeat;
+            }
+
+            .loginBox {
+                width: 300px;
+                overflow: hidden;
+                margin: 0 auto;
+
+                .siteName {
+                    font-size: 14px;
+                    margin-top: 26px;
+                }
+
+                .errorTip {
+                    height: 20px;
+                    color: #e00;
+
+                    /* 隐藏错误提示信息 */
+                    .hd-errorTip{
+                        display: none;
+                    }
+                    /* 显示错误提示信息 */
+                    .show-errorTip{
+                        display: block;
+                    }
+                    i {
+                        background-position: -38px -14px;
+                        margin-top: 2px;
+                    }
+                }
+                form{
+                    margin-top: 10px;
+                    input{
+                        width: 298px;
+                        height: 34px;
+                        border: 1px solid #ccc;
+                        margin: 10px 0;
+                        text-indent: 30px;
+                        &:hover{
+                            border-bottom: 1px solid #000;
+                        }
+                    }
+                    /* 输入错误 */
+                    .active-red{
+                        border-bottom: 1px solid red;
+                    }
+                    /* 输入正确 */
+                    .active-green{
+                        border-bottom: 1px solid green;
+                    }
+                    i{
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        top: 17px;
+                        left: 5px;
+                    }
+                    .user,.password{
+                        position: relative;
+                        /* 正在输入图标 */
+                        .input{
+                            width: 18px;
+                            height: 18px;
+                            left: 265px;
+                            background-position: -20px -18px;
+                        }
+                        /* 输入正确图标 */
+                        .pass{
+                            width: 18px;
+                            height: 18px;
+                            left: 265px;
+                            background-position: -20px 0;
+                        }
+                        /* 输入错误图标 */
+                        .error{
+                            width: 18px;
+                            height: 18px;
+                            left: 265px;
+                            background-position: -20px -36px;
+                        }
+
+                    }
+                    .user{
+                        i{
+                            background-position: 0 -20px;
+                        }
+
+                    }
+                    .forget{
+                        margin: 10px 0 20px 0;
+                        color: #919191;
+                        cursor: pointer;
+                        &:hover{
+                            color: #e00;
+                        }
+                    }
+                    .loginIn{
+                        button{
+                            font-size: 16px;
+                            width: 300px;
+                            height: 36px;
+                            border: none;
+                            background-color: #999;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                        .pass{
+                            background-color: #000;
+                            &:hover{
+                                transition: all .8s;
+                                background-color: red;
+                            }
+                        }
+
+                }
+                .clause{
+                    color: #919191;
+                    margin: 10px 0 40px 0;
+                    input{
+                        width: 16px;
+                        height: 16px;
+                        float: left;
+                        margin: 0;
+                    }
+                    p{
+                        float: left;
+                        a{
+                            margin-left: -4px;
+                            width: 100%;
+                            color: #000;
+                        }
+                    }
+                }
+                .loginBox-footer{
+                    position: relative;
+                    .chat{
+                        width: 90px;
+                        height: 24px;
+                        float: left;
+                        i{
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 5px;
+                            cursor: pointer;
+                        }
+                        .wechat{
+                        top: 0;
+                        left: 0;
+                            background-position: -56px 0;
+                            &:hover{
+                                background-position: -80px 0;
+                            }
+                        }
+                        .qq{
+                            top: 0;
+                            left: 30px;
+                                background-position: -56px -24px;
+                                &:hover{
+                                    background-position: -80px -24px;
+                                }
+                            }
+                        .weibo{
+                                top: 0;
+                                left: 60px;
+                                    background-position: -56px -48px;
+                                    &:hover{
+                                        background-position: -80px -48px;
+                                    }
+                                }
+                    }
+                    .register{
+                        float: right;
+                        color: #919191;
+                        margin-right: 10px;
+                        a{
+                            color: #e00;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        i{
+                            left: 296px;
+                            top: 4px;
+                            background-position: -52px 0;
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}
